@@ -68,11 +68,10 @@
 	</header>
 	<div class="entry-content">
 		
-    	<p>##0. GitHub Pages 和 Hexo<br>GitHub Pages是GitHub推出的一款免费的静态网站发布服务。网站的文件部署在GitHub repository (直译是仓库，实质上是一个储存空间) 上，GitHub用户可以通过GitHub Pages建立个人或项目的网页。如果你对英文比较了解，GitHub官网上的教程简单明了，可以<a href="https://pages.github.com/" target="_blank" rel="external">点击</a>查看。</p>
+    	<h2 id="0-GitHub-Pages-和-Hexo"><a href="#0-GitHub-Pages-和-Hexo" class="headerlink" title="0. GitHub Pages 和 Hexo"></a>0. GitHub Pages 和 Hexo</h2><p>GitHub Pages是GitHub推出的一款免费的静态网站发布服务。网站的文件部署在GitHub repository (直译是仓库，实质上是一个储存空间) 上，GitHub用户可以通过GitHub Pages建立个人或项目的网页。如果你对英文比较了解，GitHub官网上的教程简单明了，可以<a href="https://pages.github.com/" target="_blank" rel="external">点击</a>查看。</p>
 <p>GitHub支持使用纯HTML来编辑页面。同时，也支持静态网站生成器，也可以说是一种架构来帮助你建静态网站。<a href="https://jekyllrb.com/" target="_blank" rel="external">Jekyll</a>和<a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>是两种非常流行的工具。通过他们，用户可以简单地使用Markdown发布博客。而且，这两种工具都有开源的主题可以选择。</p>
 <p>GitHub Pages 官方教程使用Jekyll作为静态网站生成器。但是，我使用的是Hexo作为我的静态网页生成工具。</p>
-<p>##1. 安装软件</p>
-<h3 id="1-0-需要安装的软件"><a href="#1-0-需要安装的软件" class="headerlink" title="1.0 需要安装的软件"></a>1.0 需要安装的软件</h3><ul>
+<h2 id="1-安装软件"><a href="#1-安装软件" class="headerlink" title="1. 安装软件"></a>1. 安装软件</h2><h3 id="1-0-需要安装的软件"><a href="#1-0-需要安装的软件" class="headerlink" title="1.0 需要安装的软件"></a>1.0 需要安装的软件</h3><ul>
 <li>Node.js</li>
 <li>git</li>
 <li>Hexo</li>
@@ -108,7 +107,7 @@
 <ul>
 <li>Windows or Mac: 可以选择GitHub Desktop或者别的其他工具。<a href="https://desktop.github.com/" target="_blank" rel="external">GitHub Desktop下载网址</a>打开后，点击写有“Download GitHub Desktop”的按钮，即可下载。我使用的是source tree，我觉得也简单好用，下载地址也在上面的表格里。</li>
 <li>Linux (Ubuntu, Debian): <code>sudo apt-get install git-core</code></li>
-<li>Linux (Fedora, Red Hat, CentOS): <code>sudo yum install git-core</code><h4 id="1-1-3-Hexo"><a href="#1-1-3-Hexo" class="headerlink" title="1.1.3 Hexo"></a>1.1.3 Hexo</h4>对于mac和linux用户，直接在终端（terminal）里面输入<br><code>npm install hexo-cli -g</code><br>就可以安装啦！<h3 id="1-2-GitHub-的设置"><a href="#1-2-GitHub-的设置" class="headerlink" title="1.2 GitHub 的设置"></a>1.2 GitHub 的设置</h3><h4 id="1-2-1-为网站声明一块空间"><a href="#1-2-1-为网站声明一块空间" class="headerlink" title="1.2.1 为网站声明一块空间"></a>1.2.1 为网站声明一块空间</h4>首先，是要为网站建立一个repository去储存网站的文件。对于个人或者组织层级的网站，可能享用username.github.io 这样格式的域名去建立的话，需要建立的repository(储存代码空间)也必须命名为username.github.io。 比如小红的GitHub用户名是xiaohong，小红要建立个人主页希望可以通过xiaohong.github.io去访问自己的页面。那么小红新建了一个repository名字就叫做xiaohong.github.io。当然假若小红并不在意域名，想用自己的项目作为页面的网址比如xiaohong.github.io/hello。就是小红使用她的GitHub中一个名为hello的repository建立的网站。<br><img src="/0v0/images/new_repository.png" alt=""><h4 id="1-2-2-（可选）设置项目空间"><a href="#1-2-2-（可选）设置项目空间" class="headerlink" title="1.2.2 （可选）设置项目空间"></a>1.2.2 （可选）设置项目空间</h4>假若小红选择了后者，使用自己的项目作为网站的储存空间。那么她还需要再</li>
+<li>Linux (Fedora, Red Hat, CentOS): <code>sudo yum install git-core</code><h4 id="1-1-3-Hexo"><a href="#1-1-3-Hexo" class="headerlink" title="1.1.3 Hexo"></a>1.1.3 Hexo</h4>对于mac和linux用户，直接在终端（terminal）里面输入<br><code>npm install hexo-cli -g</code><br>就可以安装啦！<h3 id="1-2-GitHub-的设置"><a href="#1-2-GitHub-的设置" class="headerlink" title="1.2 GitHub 的设置"></a>1.2 GitHub 的设置</h3><h4 id="1-2-1-为网站声明一块空间"><a href="#1-2-1-为网站声明一块空间" class="headerlink" title="1.2.1 为网站声明一块空间"></a>1.2.1 为网站声明一块空间</h4>首先，是要为网站建立一个repository去储存网站的文件。对于个人或者组织层级的网站，可能享用username.github.io 这样格式的域名去建立的话，需要建立的repository(储存代码空间)也必须命名为username.github.io。 比如小红的GitHub用户名是xiaohong，小红要建立个人主页希望可以通过xiaohong.github.io去访问自己的页面。那么小红新建了一个repository名字就叫做xiaohong.github.io。当然假若小红并不在意域名，想用自己的项目作为页面的网址比如xiaohong.github.io/hello。就是小红使用她的GitHub中一个名为hello的repository建立的网站。<br><img src="/images/new_repository.png" alt=""><h4 id="1-2-2-（可选）设置项目空间"><a href="#1-2-2-（可选）设置项目空间" class="headerlink" title="1.2.2 （可选）设置项目空间"></a>1.2.2 （可选）设置项目空间</h4>假若小红选择了后者，使用自己的项目作为网站的储存空间。那么她还需要再</li>
 </ul>
 <h4 id="1-2-2-在一个项目上建立网页"><a href="#1-2-2-在一个项目上建立网页" class="headerlink" title="1.2.2 在一个项目上建立网页"></a>1.2.2 在一个项目上建立网页</h4>
     
