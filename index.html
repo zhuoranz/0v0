@@ -42,299 +42,155 @@
 	</div>
 </header>
     <div id="main">
-      <!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>0v0 Random Space 0.0</title>
-    <style>
-      @import url(http://fonts.googleapis.com/earlyaccess/notosanssc.css);
-      * {
-      box-sizing: border-box;
-      overflow: auto;
-      color: #2f3dc5;
-      }
-      .web-body{
-      max-width:80%;
-      margin:0 auto;
-      overflow: auto;
-      }
-      .main{
-      overflow: auto;
-      }
-      .left{
-      display: inline-block;
-      width:25%;
-      }
-      .right{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      }
-      .grid-wrapper{
-      display: -webkit-flex;
-      display:         flex;
-      -webkit-align-items: center;
-      align-items: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      }
-      .grid-container{
-      margin: auto;
-      display: grid;
-      grid-template-rows: repeat(5, 145px);
-      grid-template-columns: repeat(7, 145px);
-      font-size: 70px;
-      align-items: center;
-      font-family: 'Noto Sans SC', sans-serif;
-      } 
-      .item1 {
-      overflow: visible;
-      grid-row-start: 1;
-      grid-row-end: 2;
-      grid-column-start: 1;
-      grid-column-end: 2;
-      text-align: center;
-      }
-      .item2 {
-      overflow: visible;
-      grid-row-start: 1;
-      grid-row-end: 2;
-      grid-column-start: 3;
-      grid-column-end: 4;
-      text-align: center;
-      }
-      .item3 {
-      overflow: visible;
-      grid-row-start: 1;
-      grid-row-end: 2;
-      grid-column-start: 5;
-      grid-column-end: 6;
-      text-align: center;
-      }
-      .item4 {
-      overflow: visible;
-      grid-row-start: 3;
-      grid-row-end: 4;
-      grid-column-start: 1;
-      grid-column-end: 2;
-      text-align: center;
-      }
-      .item5 {
-      overflow: visible;
-      grid-row-start: 3;
-      grid-row-end: 4;
-      grid-column-start: 3;
-      grid-column-end: 4;
-      text-align: center;
-      }
-      .item6 {
-      overflow: visible;
-      grid-row-start: 3;
-      grid-row-end: 4;
-      grid-column-start: 5;
-      grid-column-end: 6;
-      text-align: center;
-      }
-      .item7 {
-      overflow: visible;
-      grid-row-start: 5;
-      grid-row-end: 6;
-      grid-column-start: 1;
-      grid-column-end: 2;
-      text-align: center;
-      }
-      .item8 {
-      overflow: visible;
-      grid-row-start: 5;
-      grid-row-end: 6;
-      grid-column-start: 3;
-      grid-column-end: 4;
-      text-align: center;
-      }
-      .item9 {
-      overflow: visible;
-      grid-row-start: 5;
-      grid-row-end: 6;
-      grid-column-start: 5;
-      grid-column-end: 6;
-      text-align: center;
-      }
-      .item14 {
-      overflow: visible;
-      grid-row-start: 1;
-      grid-row-end: 2;
-      grid-column-start: 7;
-      grid-column-end: 8;
-      text-align: center;
-      }
-      .item24 {
-      overflow: visible;
-      grid-row-start: 3;
-      grid-row-end: 4;
-      grid-column-start: 7;
-      grid-column-end: 8;
-      text-align: center;
-      }
-      .item34 {
-      overflow: visible;
-      grid-row-start: 5;
-      grid-row-end: 6;
-      grid-column-start: 7;
-      grid-column-end: 8;
-      text-align: center;
-      }
-      .latest-post{
-      font-size: 12px;
-      position: relative;
-      top: -23px;
-      left: 30px;
-      color: grey;
-      }
-      .eng-title{
-      font-size: 10px;
-      color: darkgrey;
-      position: relative;
-      bottom: -15px;
-      }
-    </style>
+      
+  
+    <article id="post-使用hexo和github-pages搭建博客" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/0v0/2016/10/30/使用hexo和github-pages搭建博客/" class="article-date">
+  <time datetime="2016-10-30T15:28:28.000Z" itemprop="datePublished">2016-10-30</time>
+</a>
+		</span>
+		<span class="meta-elements author">Zhuoran Zhang</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/0v0/2016/10/30/使用hexo和github-pages搭建博客/">使用hexo和github pages搭建博客</a>
+    </h1>
+  
 
-    <script type="text/javascript">
-      function initial(){
-      
-        var d = new Date();
-        var dd = d.getDate();
-        var mm = d.getMonth();
-        document.getElementById("item6").innerHTML = dd;
-        document.getElementById("item4").innerHTML = mm+1;
-      
-        //canvas
-        var canvas = document.getElementById('canvas');    
-        if(!canvas.getContext) {
-          alert('你的浏览器不支持 canvas!');
-          return;
-        }
-      
-        var canvas = document.getElementById('canvas');
-        var ctx = canvas.getContext('2d');
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        //填充颜色
-        ctx.fillStyle = "rgba(0,222,255, 0.2)";
-        //开始绘制路径
-        ctx.beginPath();
-        //左上角
-        ctx.moveTo(0, canvas.height/2);
-        //右上角
-        ctx.lineTo(canvas.width, canvas.height/2);
-        //右下角
-        ctx.lineTo(canvas.width, canvas.height);
-        //左下角
-        ctx.lineTo(0, canvas.height);
-        //左上角
-        ctx.lineTo(0, canvas.height/2);
-        //闭合路径
-        ctx.closePath();
-        //填充路径
-        ctx.fill();
-      
-      
-        //如果浏览器支持requestAnimFrame则使用requestAnimFrame否则使用setTimeout
-        window.requestAnimFrame = (function(){
-          return  window.requestAnimationFrame       ||
-          window.webkitRequestAnimationFrame ||
-          window.mozRequestAnimationFrame    ||
-          function( callback ){
-            window.setTimeout(callback, 1000 / 60);
-          };
-        })();
-
-        var step = 0;
-
-        function loop(){
-          //清空canvas
-          ctx.clearRect(0,0,canvas.width,canvas.height);
-          //绘制矩形
-          ctx.fillStyle = "rgba(0,222,255, 0.2)";
-    //角度增加一度
-    step++;
-//角度转换成弧度
-    var angle = step*Math.PI/180;
-    //矩形高度的变化量
-    var deltaHeight   = Math.sin(angle) * 50;
-    //矩形高度的变化量(右上顶点)
-    var deltaHeightRight   = Math.cos(angle) * 50;
-    ctx.beginPath();
-ctx.moveTo(0, canvas.height/2+deltaHeight);
-//ctx.lineTo(canvas.width, canvas.height/2+deltaHeightRight);
-//画曲线
-ctx.bezierCurveTo(canvas.width /2, canvas.height/2+deltaHeight-50, canvas.width / 2, canvas.height/2+deltaHeightRight-50, canvas.width, canvas.height/2+deltaHeightRight);
-ctx.lineTo(canvas.width, canvas.height);
-ctx.lineTo(0, canvas.height);
-ctx.lineTo(0, canvas.height/2+deltaHeight);
-ctx.closePath();
-ctx.fill();
+	</header>
+	<div class="entry-content">
+		
+    	<p>##0. GitHub Pages 和 Hexo<br>GitHub Pages是GitHub推出的一款免费的静态网站发布服务。网站的文件部署在GitHub repository (直译是仓库，实质上是一个储存空间) 上，GitHub用户可以通过GitHub Pages建立个人或项目的网页。如果你对英文比较了解，GitHub官网上的教程简单明了，可以<a href="https://pages.github.com/" target="_blank" rel="external">点击</a>查看。</p>
+<p>GitHub支持使用纯HTML来编辑页面。同时，也支持静态网站生成器，也可以说是一种架构来帮助你建静态网站。<a href="https://jekyllrb.com/" target="_blank" rel="external">Jekyll</a>和<a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>是两种非常流行的工具。通过他们，用户可以简单地使用Markdown发布博客。而且，这两种工具都有开源的主题可以选择。</p>
+<p>GitHub Pages 官方教程使用Jekyll作为静态网站生成器。但是，我使用的是Hexo作为我的静态网页生成工具。</p>
+<p>##1. 安装软件</p>
+<h3 id="1-0-需要安装的软件"><a href="#1-0-需要安装的软件" class="headerlink" title="1.0 需要安装的软件"></a>1.0 需要安装的软件</h3><ul>
+<li>Node.js</li>
+<li>git</li>
+<li>Hexo</li>
+</ul>
+<h3 id="1-1-安装地址"><a href="#1-1-安装地址" class="headerlink" title="1.1 安装地址"></a>1.1 安装地址</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">软件名称</th>
+<th style="text-align:center">中文官网下载网址</th>
+<th style="text-align:center">英文官网</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Node.js</td>
+<td style="text-align:center"><a href="https://nodejs.org/zh-cn/" target="_blank" rel="external">中文</a></td>
+<td style="text-align:center"><a href="https://nodejs.org/en/" target="_blank" rel="external">英文</a></td>
+</tr>
+<tr>
+<td style="text-align:center">GitHub Desktop</td>
+<td style="text-align:center">－</td>
+<td style="text-align:center"><a href="https://desktop.github.com/" target="_blank" rel="external">Mac &amp;Windows</a></td>
+</tr>
+<tr>
+<td style="text-align:center">Source Tree</td>
+<td style="text-align:center">－</td>
+<td style="text-align:center"><a href="https://www.sourcetreeapp.com/" target="_blank" rel="external">Mac &amp;Windows</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="1-1-1-Node-js"><a href="#1-1-1-Node-js" class="headerlink" title="1.1.1 Node.js"></a>1.1.1 Node.js</h4><p>由于Hexo是基于Node.js开发的，首先我们要先安装<a href="https://nodejs.org/zh-cn/" target="_blank" rel="external">Node.js</a>.<br>当前版本一般是最新更新的, 另一个版本更稳定一些。</p>
+<h4 id="1-1-2-Git-工具"><a href="#1-1-2-Git-工具" class="headerlink" title="1.1.2 Git 工具"></a>1.1.2 Git 工具</h4><p>Git 工具的选择很多，如果已经有了就可以跳过这个部分。下面给了一些软件得下载方式。同时，你也可以使用命令行操作。</p>
+<ul>
+<li>Windows or Mac: 可以选择GitHub Desktop或者别的其他工具。<a href="https://desktop.github.com/" target="_blank" rel="external">GitHub Desktop下载网址</a>打开后，点击写有“Download GitHub Desktop”的按钮，即可下载。我使用的是source tree，我觉得也简单好用，下载地址也在上面的表格里。</li>
+<li>Linux (Ubuntu, Debian): <code>sudo apt-get install git-core</code></li>
+<li>Linux (Fedora, Red Hat, CentOS): <code>sudo yum install git-core</code><h4 id="1-1-3-Hexo"><a href="#1-1-3-Hexo" class="headerlink" title="1.1.3 Hexo"></a>1.1.3 Hexo</h4>对于mac和linux用户，直接在终端（terminal）里面输入<br><code>npm install hexo-cli -g</code><br>就可以安装啦！<h3 id="1-2-GitHub-的设置"><a href="#1-2-GitHub-的设置" class="headerlink" title="1.2 GitHub 的设置"></a>1.2 GitHub 的设置</h3><h4 id="1-2-1-为网站声明一块空间"><a href="#1-2-1-为网站声明一块空间" class="headerlink" title="1.2.1 为网站声明一块空间"></a>1.2.1 为网站声明一块空间</h4>首先，是要为网站建立一个repository去储存网站的文件。对于个人或者组织层级的网站，可能享用username.github.io 这样格式的域名去建立的话，需要建立的repository(储存代码空间)也必须命名为username.github.io。 比如小红的GitHub用户名是xiaohong，小红要建立个人主页希望可以通过xiaohong.github.io去访问自己的页面。那么小红新建了一个repository名字就叫做xiaohong.github.io。当然假若小红并不在意域名，想用自己的项目作为页面的网址比如xiaohong.github.io/hello。就是小红使用她的GitHub中一个名为hello的repository建立的网站。<br><img src="/0v0/images/new_repository.png" alt=""><h4 id="1-2-2-（可选）设置项目空间"><a href="#1-2-2-（可选）设置项目空间" class="headerlink" title="1.2.2 （可选）设置项目空间"></a>1.2.2 （可选）设置项目空间</h4>假若小红选择了后者，使用自己的项目作为网站的储存空间。那么她还需要再</li>
+</ul>
+<h4 id="1-2-2-在一个项目上建立网页"><a href="#1-2-2-在一个项目上建立网页" class="headerlink" title="1.2.2 在一个项目上建立网页"></a>1.2.2 在一个项目上建立网页</h4>
     
-    //boat
-    ctx.beginPath();
-    ctx.moveTo(0, canvas.height/2+deltaHeight);
-//ctx.lineTo(canvas.width, canvas.height/2+deltaHeightRight);
-//画曲线
-ctx.bezierCurveTo(canvas.width /2, canvas.height/2+deltaHeight-50, canvas.width / 2, canvas.height/2+deltaHeightRight-50, canvas.width, canvas.height/2+deltaHeightRight);
-ctx.lineTo(canvas.width, canvas.height);
-ctx.lineTo(0, canvas.height);
-ctx.lineTo(0, canvas.height/2+deltaHeight);
-ctx.closePath();
-ctx.fill();
-    requestAnimFrame(loop);
-        }
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+			</span>
+			<span class="tags">
+				
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/0v0/tags/Hexo-GitHub-blog/">Hexo GitHub blog</a></li></ul>
 
-        loop();
-      }
-    </script>
-  </head>
+			</span>
+		</div>
+	</footer>
+	
+</article>
 
-  <body onload="initial()">
-  <script type="text/javascript" src="canvas-nest.min.js"></script>
-    <canvas id="canvas" style="position:absolute;top:0px;left:0px;z-index:-1;"></canvas>
-    <div class="web-body">
-      <div class="main">
-        <div class="left">
-          aq</br>
-          sadasdas<br/>
-          asdasa<br>
-        </div>
-        <div class="right">
-          <div class="grid-wrapper">
-            <div class="grid-container">       
-              <div class="item1">
-                <div class="cn-title">学</div>
-              </div>
-              <div class="item2">
-                <div class="cn-title">技</div>
-              </div>
-              <div class="item3">／</div>
-              <div class="item14">趣</div>
-              <div class="item4" id="item4"></div>
-              <div class="item5">月</div>
-              <div class="item6" id="item6"></div>
-              <div class="item24">日</div>
-              <div class="item7">／</div>
-              <div class="item8">随</div>
-              <div class="item9">味</div>
-              <div class="item34">／</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-hello-world" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/0v0/2016/10/29/hello-world/" class="article-date">
+  <time datetime="2016-10-29T15:18:37.000Z" itemprop="datePublished">2016-10-29</time>
+</a>
+		</span>
+		<span class="meta-elements author">Zhuoran Zhang</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/0v0/2016/10/29/hello-world/">Hello World</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+  
+
     </div>
     <div class="mb-search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
