@@ -42,65 +42,299 @@
 	</div>
 </header>
     <div id="main">
+      <!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>0v0 Random Space 0.0</title>
+    <style>
+      @import url(http://fonts.googleapis.com/earlyaccess/notosanssc.css);
+      * {
+      box-sizing: border-box;
+      overflow: auto;
+      color: #2f3dc5;
+      }
+      .web-body{
+      max-width:80%;
+      margin:0 auto;
+      overflow: auto;
+      }
+      .main{
+      overflow: auto;
+      }
+      .left{
+      display: inline-block;
+      width:25%;
+      }
+      .right{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      }
+      .grid-wrapper{
+      display: -webkit-flex;
+      display:         flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      }
+      .grid-container{
+      margin: auto;
+      display: grid;
+      grid-template-rows: repeat(5, 145px);
+      grid-template-columns: repeat(7, 145px);
+      font-size: 70px;
+      align-items: center;
+      font-family: 'Noto Sans SC', sans-serif;
+      } 
+      .item1 {
+      overflow: visible;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      text-align: center;
+      }
+      .item2 {
+      overflow: visible;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      text-align: center;
+      }
+      .item3 {
+      overflow: visible;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 5;
+      grid-column-end: 6;
+      text-align: center;
+      }
+      .item4 {
+      overflow: visible;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      text-align: center;
+      }
+      .item5 {
+      overflow: visible;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      text-align: center;
+      }
+      .item6 {
+      overflow: visible;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      grid-column-start: 5;
+      grid-column-end: 6;
+      text-align: center;
+      }
+      .item7 {
+      overflow: visible;
+      grid-row-start: 5;
+      grid-row-end: 6;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      text-align: center;
+      }
+      .item8 {
+      overflow: visible;
+      grid-row-start: 5;
+      grid-row-end: 6;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      text-align: center;
+      }
+      .item9 {
+      overflow: visible;
+      grid-row-start: 5;
+      grid-row-end: 6;
+      grid-column-start: 5;
+      grid-column-end: 6;
+      text-align: center;
+      }
+      .item14 {
+      overflow: visible;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 7;
+      grid-column-end: 8;
+      text-align: center;
+      }
+      .item24 {
+      overflow: visible;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      grid-column-start: 7;
+      grid-column-end: 8;
+      text-align: center;
+      }
+      .item34 {
+      overflow: visible;
+      grid-row-start: 5;
+      grid-row-end: 6;
+      grid-column-start: 7;
+      grid-column-end: 8;
+      text-align: center;
+      }
+      .latest-post{
+      font-size: 12px;
+      position: relative;
+      top: -23px;
+      left: 30px;
+      color: grey;
+      }
+      .eng-title{
+      font-size: 10px;
+      color: darkgrey;
+      position: relative;
+      bottom: -15px;
+      }
+    </style>
+
+    <script type="text/javascript">
+      function initial(){
       
-  
-    <article id="post-hello-world" class="post">
-	<footer class="entry-meta-header">
-		<span class="meta-elements date">
-			<a href="/0v0/2016/10/29/hello-world/" class="article-date">
-  <time datetime="2016-10-29T15:18:37.000Z" itemprop="datePublished">2016-10-29</time>
-</a>
-		</span>
-		<span class="meta-elements author">Zhuoran Zhang</span>
-		<div class="commentscount">
-			
-		</div>
-	</footer>
-	
-	<header class="entry-header">
-		
-  
-    <h1 itemprop="name" class="entry-title">
-      <a class="article-title" href="/0v0/2016/10/29/hello-world/">Hello World</a>
-    </h1>
-  
+        var d = new Date();
+        var dd = d.getDate();
+        var mm = d.getMonth();
+        document.getElementById("item6").innerHTML = dd;
+        document.getElementById("item4").innerHTML = mm+1;
+      
+        //canvas
+        var canvas = document.getElementById('canvas');    
+        if(!canvas.getContext) {
+          alert('你的浏览器不支持 canvas!');
+          return;
+        }
+      
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        //填充颜色
+        ctx.fillStyle = "rgba(0,222,255, 0.2)";
+        //开始绘制路径
+        ctx.beginPath();
+        //左上角
+        ctx.moveTo(0, canvas.height/2);
+        //右上角
+        ctx.lineTo(canvas.width, canvas.height/2);
+        //右下角
+        ctx.lineTo(canvas.width, canvas.height);
+        //左下角
+        ctx.lineTo(0, canvas.height);
+        //左上角
+        ctx.lineTo(0, canvas.height/2);
+        //闭合路径
+        ctx.closePath();
+        //填充路径
+        ctx.fill();
+      
+      
+        //如果浏览器支持requestAnimFrame则使用requestAnimFrame否则使用setTimeout
+        window.requestAnimFrame = (function(){
+          return  window.requestAnimationFrame       ||
+          window.webkitRequestAnimationFrame ||
+          window.mozRequestAnimationFrame    ||
+          function( callback ){
+            window.setTimeout(callback, 1000 / 60);
+          };
+        })();
 
-	</header>
-	<div class="entry-content">
-		
-    	<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        var step = 0;
 
+        function loop(){
+          //清空canvas
+          ctx.clearRect(0,0,canvas.width,canvas.height);
+          //绘制矩形
+          ctx.fillStyle = "rgba(0,222,255, 0.2)";
+    //角度增加一度
+    step++;
+//角度转换成弧度
+    var angle = step*Math.PI/180;
+    //矩形高度的变化量
+    var deltaHeight   = Math.sin(angle) * 50;
+    //矩形高度的变化量(右上顶点)
+    var deltaHeightRight   = Math.cos(angle) * 50;
+    ctx.beginPath();
+ctx.moveTo(0, canvas.height/2+deltaHeight);
+//ctx.lineTo(canvas.width, canvas.height/2+deltaHeightRight);
+//画曲线
+ctx.bezierCurveTo(canvas.width /2, canvas.height/2+deltaHeight-50, canvas.width / 2, canvas.height/2+deltaHeightRight-50, canvas.width, canvas.height/2+deltaHeightRight);
+ctx.lineTo(canvas.width, canvas.height);
+ctx.lineTo(0, canvas.height);
+ctx.lineTo(0, canvas.height/2+deltaHeight);
+ctx.closePath();
+ctx.fill();
     
-	</div>
-	<footer class="entry-footer">
-		<div class="entry-meta-footer">
-			<span class="category">
-				
-			</span>
-			<span class="tags">
-				
-			</span>
-		</div>
-	</footer>
-	
-</article>
+    //boat
+    ctx.beginPath();
+    ctx.moveTo(0, canvas.height/2+deltaHeight);
+//ctx.lineTo(canvas.width, canvas.height/2+deltaHeightRight);
+//画曲线
+ctx.bezierCurveTo(canvas.width /2, canvas.height/2+deltaHeight-50, canvas.width / 2, canvas.height/2+deltaHeightRight-50, canvas.width, canvas.height/2+deltaHeightRight);
+ctx.lineTo(canvas.width, canvas.height);
+ctx.lineTo(0, canvas.height);
+ctx.lineTo(0, canvas.height/2+deltaHeight);
+ctx.closePath();
+ctx.fill();
+    requestAnimFrame(loop);
+        }
 
+        loop();
+      }
+    </script>
+  </head>
 
-	<hr class="article-devider">
-
-
-
-  
-  
-
+  <body onload="initial()">
+  <script type="text/javascript" src="canvas-nest.min.js"></script>
+    <canvas id="canvas" style="position:absolute;top:0px;left:0px;z-index:-1;"></canvas>
+    <div class="web-body">
+      <div class="main">
+        <div class="left">
+          aq</br>
+          sadasdas<br/>
+          asdasa<br>
+        </div>
+        <div class="right">
+          <div class="grid-wrapper">
+            <div class="grid-container">       
+              <div class="item1">
+                <div class="cn-title">学</div>
+              </div>
+              <div class="item2">
+                <div class="cn-title">技</div>
+              </div>
+              <div class="item3">／</div>
+              <div class="item14">趣</div>
+              <div class="item4" id="item4"></div>
+              <div class="item5">月</div>
+              <div class="item6" id="item6"></div>
+              <div class="item24">日</div>
+              <div class="item7">／</div>
+              <div class="item8">随</div>
+              <div class="item9">味</div>
+              <div class="item34">／</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
     </div>
     <div class="mb-search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">

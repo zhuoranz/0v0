@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>使用hexo和github pages搭建博客 | 0v0</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="##0. GitHub Pages 和 HexoGitHub Pages是GitHub推出的一款免费的静态网站发布服务。网站的文件部署在GitHub repository (直译是仓库，实质上是一个储存空间) 上，GitHub用户可以通过GitHub Pages建立个人或项目的网页。如果你对英文比较了解，GitHub官网上的教程简单明了，可以点击查看。
+GitHub支持使用纯HTML来编辑页面。同">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用hexo和github pages搭建博客">
+<meta property="og:url" content="https://zhuoranz.github.io/0v0/2016/10/30/使用hexo和github-pages搭建博客/index.html">
+<meta property="og:site_name" content="0v0">
+<meta property="og:description" content="##0. GitHub Pages 和 HexoGitHub Pages是GitHub推出的一款免费的静态网站发布服务。网站的文件部署在GitHub repository (直译是仓库，实质上是一个储存空间) 上，GitHub用户可以通过GitHub Pages建立个人或项目的网页。如果你对英文比较了解，GitHub官网上的教程简单明了，可以点击查看。
+GitHub支持使用纯HTML来编辑页面。同">
+<meta property="og:image" content="https://zhuoranz.github.io/0v0/0v0/images/new_repository.png">
+<meta property="og:updated_time" content="2016-10-30T16:44:58.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="使用hexo和github pages搭建博客">
+<meta name="twitter:description" content="##0. GitHub Pages 和 HexoGitHub Pages是GitHub推出的一款免费的静态网站发布服务。网站的文件部署在GitHub repository (直译是仓库，实质上是一个储存空间) 上，GitHub用户可以通过GitHub Pages建立个人或项目的网页。如果你对英文比较了解，GitHub官网上的教程简单明了，可以点击查看。
+GitHub支持使用纯HTML来编辑页面。同">
+<meta name="twitter:image" content="https://zhuoranz.github.io/0v0/0v0/images/new_repository.png">
+  
+    <link rel="alternative" href="/atom.xml" title="0v0" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/0v0/css/style.css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+<body>
+  <div id="container">
+    <div class="mobile-nav-panel">
+	<i class="icon-reorder icon-large"></i>
+</div>
+<header id="header">
+	<h1 class="blog-title">
+		<a href="/0v0/">0v0</a>
+	</h1>
+	<nav class="nav">
+		<ul>
+			<li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li>
+			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
+			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
+		</ul>
+	</nav>
+	<div id="search-form-wrap">
+		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zhuoranz.github.io/0v0"></form>
+	</div>
+</header>
+    <div id="main">
+      <article id="post-使用hexo和github-pages搭建博客" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/0v0/2016/10/30/使用hexo和github-pages搭建博客/" class="article-date">
+  <time datetime="2016-10-30T15:28:28.000Z" itemprop="datePublished">2016-10-30</time>
+</a>
+		</span>
+		<span class="meta-elements author">Zhuoran Zhang</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 class="article-title entry-title" itemprop="name">
+      使用hexo和github pages搭建博客
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>##0. GitHub Pages 和 Hexo<br>GitHub Pages是GitHub推出的一款免费的静态网站发布服务。网站的文件部署在GitHub repository (直译是仓库，实质上是一个储存空间) 上，GitHub用户可以通过GitHub Pages建立个人或项目的网页。如果你对英文比较了解，GitHub官网上的教程简单明了，可以<a href="https://pages.github.com/" target="_blank" rel="external">点击</a>查看。</p>
+<p>GitHub支持使用纯HTML来编辑页面。同时，也支持静态网站生成器，也可以说是一种架构来帮助你建静态网站。<a href="https://jekyllrb.com/" target="_blank" rel="external">Jekyll</a>和<a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>是两种非常流行的工具。通过他们，用户可以简单地使用Markdown发布博客。而且，这两种工具都有开源的主题可以选择。</p>
+<p>GitHub Pages 官方教程使用Jekyll作为静态网站生成器。但是，我使用的是Hexo作为我的静态网页生成工具。</p>
+<p>##1. 安装软件</p>
+<h3 id="1-0-需要安装的软件"><a href="#1-0-需要安装的软件" class="headerlink" title="1.0 需要安装的软件"></a>1.0 需要安装的软件</h3><ul>
+<li>Node.js</li>
+<li>git</li>
+<li>Hexo</li>
+</ul>
+<h3 id="1-1-安装地址"><a href="#1-1-安装地址" class="headerlink" title="1.1 安装地址"></a>1.1 安装地址</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">软件名称</th>
+<th style="text-align:center">中文官网下载网址</th>
+<th style="text-align:center">英文官网</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Node.js</td>
+<td style="text-align:center"><a href="https://nodejs.org/zh-cn/" target="_blank" rel="external">中文</a></td>
+<td style="text-align:center"><a href="https://nodejs.org/en/" target="_blank" rel="external">英文</a></td>
+</tr>
+<tr>
+<td style="text-align:center">GitHub Desktop</td>
+<td style="text-align:center">－</td>
+<td style="text-align:center"><a href="https://desktop.github.com/" target="_blank" rel="external">Mac &amp;Windows</a></td>
+</tr>
+<tr>
+<td style="text-align:center">Source Tree</td>
+<td style="text-align:center">－</td>
+<td style="text-align:center"><a href="https://www.sourcetreeapp.com/" target="_blank" rel="external">Mac &amp;Windows</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="1-1-1-Node-js"><a href="#1-1-1-Node-js" class="headerlink" title="1.1.1 Node.js"></a>1.1.1 Node.js</h4><p>由于Hexo是基于Node.js开发的，首先我们要先安装<a href="https://nodejs.org/zh-cn/" target="_blank" rel="external">Node.js</a>.<br>当前版本一般是最新更新的, 另一个版本更稳定一些。</p>
+<h4 id="1-1-2-Git-工具"><a href="#1-1-2-Git-工具" class="headerlink" title="1.1.2 Git 工具"></a>1.1.2 Git 工具</h4><p>Git 工具的选择很多，如果已经有了就可以跳过这个部分。下面给了一些软件得下载方式。同时，你也可以使用命令行操作。</p>
+<ul>
+<li>Windows or Mac: 可以选择GitHub Desktop或者别的其他工具。<a href="https://desktop.github.com/" target="_blank" rel="external">GitHub Desktop下载网址</a>打开后，点击写有“Download GitHub Desktop”的按钮，即可下载。我使用的是source tree，我觉得也简单好用，下载地址也在上面的表格里。</li>
+<li>Linux (Ubuntu, Debian): <code>sudo apt-get install git-core</code></li>
+<li>Linux (Fedora, Red Hat, CentOS): <code>sudo yum install git-core</code><h4 id="1-1-3-Hexo"><a href="#1-1-3-Hexo" class="headerlink" title="1.1.3 Hexo"></a>1.1.3 Hexo</h4>对于mac和linux用户，直接在终端（terminal）里面输入<br><code>npm install hexo-cli -g</code><br>就可以安装啦！<h3 id="1-2-GitHub-的设置"><a href="#1-2-GitHub-的设置" class="headerlink" title="1.2 GitHub 的设置"></a>1.2 GitHub 的设置</h3><h4 id="1-2-1-为网站声明一块空间"><a href="#1-2-1-为网站声明一块空间" class="headerlink" title="1.2.1 为网站声明一块空间"></a>1.2.1 为网站声明一块空间</h4>首先，是要为网站建立一个repository去储存网站的文件。对于个人或者组织层级的网站，可能享用username.github.io 这样格式的域名去建立的话，需要建立的repository(储存代码空间)也必须命名为username.github.io。 比如小红的GitHub用户名是xiaohong，小红要建立个人主页希望可以通过xiaohong.github.io去访问自己的页面。那么小红新建了一个repository名字就叫做xiaohong.github.io。当然假若小红并不在意域名，想用自己的项目作为页面的网址比如xiaohong.github.io/hello。就是小红使用她的GitHub中一个名为hello的repository建立的网站。<br><img src="/0v0/images/new_repository.png" alt=""><h4 id="1-2-2-（可选）设置项目空间"><a href="#1-2-2-（可选）设置项目空间" class="headerlink" title="1.2.2 （可选）设置项目空间"></a>1.2.2 （可选）设置项目空间</h4>假若小红选择了后者，使用自己的项目作为网站的储存空间。那么她还需要再</li>
+</ul>
+<h4 id="1-2-2-在一个项目上建立网页"><a href="#1-2-2-在一个项目上建立网页" class="headerlink" title="1.2.2 在一个项目上建立网页"></a>1.2.2 在一个项目上建立网页</h4>
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+			</span>
+			<span class="tags">
+				
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/0v0/tags/Hexo-GitHub-blog/">Hexo GitHub blog</a></li></ul>
+
+			</span>
+		</div>
+	</footer>
+	
+    
+<nav id="article-nav">
+  
+  
+    <a href="/0v0/2016/10/29/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+    </div>
+    <div class="mb-search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:zhuoranz.github.io/0v0">
+  </form>
+</div>
+<footer id="footer">
+	<h1 class="footer-blog-title">
+		<a href="/0v0/">0v0</a>
+	</h1>
+	<span class="copyright">
+		&copy; 2016 Zhuoran Zhang<br>
+		Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	</span>
+</footer>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/0v0/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/0v0/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/0v0/js/script.js"></script>
+  </div>
+</body>
+</html>
