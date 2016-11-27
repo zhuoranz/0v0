@@ -44,6 +44,106 @@
     <div id="main">
       
   
+    <article id="post-leet-6" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/0v0/2016/11/27/leet-6/" class="article-date">
+  <time datetime="2016-11-27T21:22:14.000Z" itemprop="datePublished">2016-11-27</time>
+</a>
+		</span>
+		<span class="meta-elements author">Zhuoran Zhang</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/0v0/2016/11/27/leet-6/">leet-6</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
+    <article id="post-leet-code-1" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/0v0/2016/11/27/leet-code-1/" class="article-date">
+  <time datetime="2016-11-27T05:57:58.000Z" itemprop="datePublished">2016-11-27</time>
+</a>
+		</span>
+		<span class="meta-elements author">Zhuoran Zhang</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 itemprop="name" class="entry-title">
+      <a class="article-title" href="/0v0/2016/11/27/leet-code-1/">leet_code_1</a>
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<h3 id="Two-Sum"><a href="#Two-Sum" class="headerlink" title="Two Sum"></a>Two Sum</h3><h4 id="v1-0-复杂度-O-n-2"><a href="#v1-0-复杂度-O-n-2" class="headerlink" title="v1.0 复杂度 O(n^2)"></a>v1.0 复杂度 O(n^2)</h4><p>单纯的一个大循环，减下去之后，与剩下的每个对比是否相等</p>
+<h4 id="v2-0-复杂度-O-n"><a href="#v2-0-复杂度-O-n" class="headerlink" title="v2.0 复杂度 O(n)"></a>v2.0 复杂度 O(n)</h4><ul>
+<li>Hash Map 存差值，用contain看是否存在</li>
+<li>时间： 9ms</li>
+<li>百分比：大于59.6%</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">public class Solution &#123;</div><div class="line">    public int[] twoSum(int[] nums, int target) &#123;</div><div class="line">        HashMap &lt;Integer,Integer&gt; i = new HashMap&lt;Integer,Integer&gt; ();</div><div class="line">        for(int n =0;n&lt;nums.length;n++)&#123;</div><div class="line">            i.put(target - nums[n],n);</div><div class="line">        &#125;</div><div class="line">        </div><div class="line">        for(int n =0;n&lt;nums.length;n++)&#123;</div><div class="line">            if(i.containsKey(nums[n]))&#123;</div><div class="line">                int val = i.get(nums[n]);</div><div class="line">                if(val!=n)&#123;</div><div class="line">                    int[] result = new int [2];</div><div class="line">                    result[0] = n;</div><div class="line">                    result[1] = val;</div><div class="line">                    return result;   </div><div class="line">                &#125;</div><div class="line"></div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        return null;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="v3-0-One-pass-hash-table"><a href="#v3-0-One-pass-hash-table" class="headerlink" title="v3.0 !!!! One-pass hash table"></a>v3.0 !!!! One-pass hash table</h4><p>look back to check if the current number’s complement is already exist in map</p>
+<h4 id="tips-new-int"><a href="#tips-new-int" class="headerlink" title="tips new int"></a>tips new int</h4> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">return new int[] &#123; i, j &#125;;</div></pre></td></tr></table></figure>
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+</article>
+
+
+	<hr class="article-devider">
+
+
+
+  
     <article id="post-扁豆焖面" class="post">
 	<footer class="entry-meta-header">
 		<span class="meta-elements date">

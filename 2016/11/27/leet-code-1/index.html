@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>leet_code_1 | 0v0</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Two Sumv1.0 复杂度 O(n^2)单纯的一个大循环，减下去之后，与剩下的每个对比是否相等
+v2.0 复杂度 O(n)
+Hash Map 存差值，用contain看是否存在
+时间： 9ms
+百分比：大于59.6%
+
+12345678910111213141516171819202122public class Solution &amp;#123;    public int[] twoSum(i">
+<meta property="og:type" content="article">
+<meta property="og:title" content="leet_code_1">
+<meta property="og:url" content="https://zhuoranz.github.io/0v0/2016/11/27/leet-code-1/index.html">
+<meta property="og:site_name" content="0v0">
+<meta property="og:description" content="Two Sumv1.0 复杂度 O(n^2)单纯的一个大循环，减下去之后，与剩下的每个对比是否相等
+v2.0 复杂度 O(n)
+Hash Map 存差值，用contain看是否存在
+时间： 9ms
+百分比：大于59.6%
+
+12345678910111213141516171819202122public class Solution &amp;#123;    public int[] twoSum(i">
+<meta property="og:updated_time" content="2016-11-27T06:06:46.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="leet_code_1">
+<meta name="twitter:description" content="Two Sumv1.0 复杂度 O(n^2)单纯的一个大循环，减下去之后，与剩下的每个对比是否相等
+v2.0 复杂度 O(n)
+Hash Map 存差值，用contain看是否存在
+时间： 9ms
+百分比：大于59.6%
+
+12345678910111213141516171819202122public class Solution &amp;#123;    public int[] twoSum(i">
+  
+    <link rel="alternative" href="/atom.xml" title="0v0" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/0v0/css/style.css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+<body>
+  <div id="container">
+    <div class="mobile-nav-panel">
+	<i class="icon-reorder icon-large"></i>
+</div>
+<header id="header">
+	<h1 class="blog-title">
+		<a href="/0v0/">0v0</a>
+	</h1>
+	<nav class="nav">
+		<ul>
+			<li><a href="/0v0">Home</a></li><li><a href="/0v0/archives">Archives</a></li>
+			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
+			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
+		</ul>
+	</nav>
+	<div id="search-form-wrap">
+		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zhuoranz.github.io/0v0"></form>
+	</div>
+</header>
+    <div id="main">
+      <article id="post-leet-code-1" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/0v0/2016/11/27/leet-code-1/" class="article-date">
+  <time datetime="2016-11-27T05:57:58.000Z" itemprop="datePublished">2016-11-27</time>
+</a>
+		</span>
+		<span class="meta-elements author">Zhuoran Zhang</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 class="article-title entry-title" itemprop="name">
+      leet_code_1
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<h3 id="Two-Sum"><a href="#Two-Sum" class="headerlink" title="Two Sum"></a>Two Sum</h3><h4 id="v1-0-复杂度-O-n-2"><a href="#v1-0-复杂度-O-n-2" class="headerlink" title="v1.0 复杂度 O(n^2)"></a>v1.0 复杂度 O(n^2)</h4><p>单纯的一个大循环，减下去之后，与剩下的每个对比是否相等</p>
+<h4 id="v2-0-复杂度-O-n"><a href="#v2-0-复杂度-O-n" class="headerlink" title="v2.0 复杂度 O(n)"></a>v2.0 复杂度 O(n)</h4><ul>
+<li>Hash Map 存差值，用contain看是否存在</li>
+<li>时间： 9ms</li>
+<li>百分比：大于59.6%</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">public class Solution &#123;</div><div class="line">    public int[] twoSum(int[] nums, int target) &#123;</div><div class="line">        HashMap &lt;Integer,Integer&gt; i = new HashMap&lt;Integer,Integer&gt; ();</div><div class="line">        for(int n =0;n&lt;nums.length;n++)&#123;</div><div class="line">            i.put(target - nums[n],n);</div><div class="line">        &#125;</div><div class="line">        </div><div class="line">        for(int n =0;n&lt;nums.length;n++)&#123;</div><div class="line">            if(i.containsKey(nums[n]))&#123;</div><div class="line">                int val = i.get(nums[n]);</div><div class="line">                if(val!=n)&#123;</div><div class="line">                    int[] result = new int [2];</div><div class="line">                    result[0] = n;</div><div class="line">                    result[1] = val;</div><div class="line">                    return result;   </div><div class="line">                &#125;</div><div class="line"></div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        return null;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="v3-0-One-pass-hash-table"><a href="#v3-0-One-pass-hash-table" class="headerlink" title="v3.0 !!!! One-pass hash table"></a>v3.0 !!!! One-pass hash table</h4><p>look back to check if the current number’s complement is already exist in map</p>
+<h4 id="tips-new-int"><a href="#tips-new-int" class="headerlink" title="tips new int"></a>tips new int</h4> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">return new int[] &#123; i, j &#125;;</div></pre></td></tr></table></figure>
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+			</span>
+			<span class="tags">
+				
+			</span>
+		</div>
+	</footer>
+	
+    
+<nav id="article-nav">
+  
+    <a href="/0v0/2016/11/27/leet-6/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          leet-6
+        
+      </div>
+    </a>
+  
+  
+    <a href="/0v0/2016/10/31/扁豆焖面/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">
+        
+          扁豆焖面
+        
+      </div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+    </div>
+    <div class="mb-search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:zhuoranz.github.io/0v0">
+  </form>
+</div>
+<footer id="footer">
+	<h1 class="footer-blog-title">
+		<a href="/0v0/">0v0</a>
+	</h1>
+	<span class="copyright">
+		&copy; 2016 Zhuoran Zhang<br>
+		Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	</span>
+</footer>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/0v0/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/0v0/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/0v0/js/script.js"></script>
+  </div>
+</body>
+</html>
