@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>LZW 算法及小例子 | 0v0</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="LZW 是一种无损压缩方式。核心在于建立字符串表减少重复信息，所以重复信息越多再参考资料：
+
+Duke大学LZW Data compressoion。有很好的例子，链接： https://www.cs.duke.edu/csed/curious/compression/lzw.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LZW 算法及小例子">
+<meta property="og:url" content="https://zhuoranz.github.io/0v0/2016/11/27/LZW-example/index.html">
+<meta property="og:site_name" content="0v0">
+<meta property="og:description" content="LZW 是一种无损压缩方式。核心在于建立字符串表减少重复信息，所以重复信息越多再参考资料：
+
+Duke大学LZW Data compressoion。有很好的例子，链接： https://www.cs.duke.edu/csed/curious/compression/lzw.html">
+<meta property="og:updated_time" content="2016-11-28T03:48:38.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="LZW 算法及小例子">
+<meta name="twitter:description" content="LZW 是一种无损压缩方式。核心在于建立字符串表减少重复信息，所以重复信息越多再参考资料：
+
+Duke大学LZW Data compressoion。有很好的例子，链接： https://www.cs.duke.edu/csed/curious/compression/lzw.html">
+  
+    <link rel="alternative" href="/atom.xml" title="0v0" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/0v0/css/style.css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+<body>
+  <div id="container">
+    <div class="mobile-nav-panel">
+	<i class="icon-reorder icon-large"></i>
+</div>
+<header id="header">
+	<h1 class="blog-title">
+		<a href="/0v0/">0v0</a>
+	</h1>
+	<nav class="nav">
+		<ul>
+			<li><a href="/0v0">Home</a></li><li><a href="/0v0/archives">Archives</a></li>
+			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
+			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
+		</ul>
+	</nav>
+	<div id="search-form-wrap">
+		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zhuoranz.github.io/0v0"></form>
+	</div>
+</header>
+    <div id="main">
+      <article id="post-LZW-example" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/0v0/2016/11/27/LZW-example/" class="article-date">
+  <time datetime="2016-11-28T02:46:17.000Z" itemprop="datePublished">2016-11-27</time>
+</a>
+		</span>
+		<span class="meta-elements author">Zhuoran Zhang</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 class="article-title entry-title" itemprop="name">
+      LZW 算法及小例子
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>LZW 是一种无损压缩方式。核心在于建立字符串表减少重复信息，所以重复信息越多再<br>参考资料：</p>
+<ul>
+<li>Duke大学LZW Data compressoion。有很好的例子，链接：<a href=""> https://www.cs.duke.edu/csed/curious/compression/lzw.html</a></li>
+</ul>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+			</span>
+			<span class="tags">
+				
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/0v0/tags/算法/">算法</a></li></ul>
+
+			</span>
+		</div>
+	</footer>
+	
+    
+<nav id="article-nav">
+  
+    <a href="/0v0/2016/11/27/mac问题合集/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          mac问题合集
+        
+      </div>
+    </a>
+  
+  
+    <a href="/0v0/2016/11/27/牛肉饭/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">
+        
+          牛肉饭 （Gyudon）
+        
+      </div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+    </div>
+    <div class="mb-search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:zhuoranz.github.io/0v0">
+  </form>
+</div>
+<footer id="footer">
+	<h1 class="footer-blog-title">
+		<a href="/0v0/">0v0</a>
+	</h1>
+	<span class="copyright">
+		&copy; 2016 Zhuoran Zhang<br>
+		Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	</span>
+</footer>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/0v0/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/0v0/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/0v0/js/script.js"></script>
+  </div>
+</body>
+</html>
