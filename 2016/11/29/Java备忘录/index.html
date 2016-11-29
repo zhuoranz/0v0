@@ -5,31 +5,46 @@
   
   <title>Java备忘录 （持续更新） | 0v0</title>
   <meta name="viewport" content="width=device-width">
-  <meta name="description" content="1.0 基础数据类型1.1 int2.0 基础运算2.1 取余运算符 %
-整数  a%b=a-(a/b)*b  因此，负数 ％ 正数，相当于是负数绝对值％正数加符号
-浮点数  a%b=a-(b*q)， q=int(a/b)  因此，相当于是证书的取余＋小数部分
-
-Reference:
-Java 基本数据类型 http://www.runoob.com/java/java-basic-datatyp">
+  <meta name="description" content="1.0 基础数据类型1.1 byte位数：8位、有符号的，以二进制补码表示的整数
+（2进制补码？）
+最大值： 127（2^7-1）
+最小值：-128（-2^7）
+默认值：    0
+1.2 int位数：32位、有符号的,以二进制补码表示的整数
+（2进制补码？）
+最大值： 127（2^7-1）
+最小值：-128（-2^7）
+默认值：    0
+1.3 char位数：一个单一的16位Unicode字符">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java备忘录 （持续更新）">
 <meta property="og:url" content="https://zhuoranz.github.io/0v0/2016/11/29/Java备忘录/index.html">
 <meta property="og:site_name" content="0v0">
-<meta property="og:description" content="1.0 基础数据类型1.1 int2.0 基础运算2.1 取余运算符 %
-整数  a%b=a-(a/b)*b  因此，负数 ％ 正数，相当于是负数绝对值％正数加符号
-浮点数  a%b=a-(b*q)， q=int(a/b)  因此，相当于是证书的取余＋小数部分
-
-Reference:
-Java 基本数据类型 http://www.runoob.com/java/java-basic-datatyp">
-<meta property="og:updated_time" content="2016-11-29T17:20:24.000Z">
+<meta property="og:description" content="1.0 基础数据类型1.1 byte位数：8位、有符号的，以二进制补码表示的整数
+（2进制补码？）
+最大值： 127（2^7-1）
+最小值：-128（-2^7）
+默认值：    0
+1.2 int位数：32位、有符号的,以二进制补码表示的整数
+（2进制补码？）
+最大值： 127（2^7-1）
+最小值：-128（-2^7）
+默认值：    0
+1.3 char位数：一个单一的16位Unicode字符">
+<meta property="og:updated_time" content="2016-11-29T23:39:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java备忘录 （持续更新）">
-<meta name="twitter:description" content="1.0 基础数据类型1.1 int2.0 基础运算2.1 取余运算符 %
-整数  a%b=a-(a/b)*b  因此，负数 ％ 正数，相当于是负数绝对值％正数加符号
-浮点数  a%b=a-(b*q)， q=int(a/b)  因此，相当于是证书的取余＋小数部分
-
-Reference:
-Java 基本数据类型 http://www.runoob.com/java/java-basic-datatyp">
+<meta name="twitter:description" content="1.0 基础数据类型1.1 byte位数：8位、有符号的，以二进制补码表示的整数
+（2进制补码？）
+最大值： 127（2^7-1）
+最小值：-128（-2^7）
+默认值：    0
+1.2 int位数：32位、有符号的,以二进制补码表示的整数
+（2进制补码？）
+最大值： 127（2^7-1）
+最小值：-128（-2^7）
+默认值：    0
+1.3 char位数：一个单一的16位Unicode字符">
   
     <link rel="alternative" href="/atom.xml" title="0v0" type="application/atom+xml">
   
@@ -85,13 +100,35 @@ Java 基本数据类型 http://www.runoob.com/java/java-basic-datatyp">
 	</header>
 	<div class="entry-content">
 		
-    	<h4 id="1-0-基础数据类型"><a href="#1-0-基础数据类型" class="headerlink" title="1.0 基础数据类型"></a>1.0 基础数据类型</h4><h5 id="1-1-int"><a href="#1-1-int" class="headerlink" title="1.1 int"></a>1.1 int</h5><h4 id="2-0-基础运算"><a href="#2-0-基础运算" class="headerlink" title="2.0 基础运算"></a>2.0 基础运算</h4><h5 id="2-1-取余运算符"><a href="#2-1-取余运算符" class="headerlink" title="2.1 取余运算符 %"></a>2.1 取余运算符 %</h5><ul>
+    	<h4 id="1-0-基础数据类型"><a href="#1-0-基础数据类型" class="headerlink" title="1.0 基础数据类型"></a>1.0 基础数据类型</h4><h5 id="1-1-byte"><a href="#1-1-byte" class="headerlink" title="1.1 byte"></a>1.1 byte</h5><pre><code>位数：8位、有符号的，以二进制补码表示的整数
+（2进制补码？）
+最大值： 127（2^7-1）
+最小值：-128（-2^7）
+默认值：    0
+</code></pre><h5 id="1-2-int"><a href="#1-2-int" class="headerlink" title="1.2 int"></a>1.2 int</h5><pre><code>位数：32位、有符号的,以二进制补码表示的整数
+（2进制补码？）
+最大值： 127（2^7-1）
+最小值：-128（-2^7）
+默认值：    0
+</code></pre><h5 id="1-3-char"><a href="#1-3-char" class="headerlink" title="1.3 char"></a>1.3 char</h5><pre><code>位数：一个单一的16位Unicode字符；
+最小值： ’\u0000’（即为0）
+最大值： ’\uffff’（即为65,535）
+char数据类型可以储存任何字符；
+例子：char letter = ‘A’。
+</code></pre><h4 id="2-0-基础运算"><a href="#2-0-基础运算" class="headerlink" title="2.0 基础运算"></a>2.0 基础运算</h4><h5 id="2-1-取余运算符"><a href="#2-1-取余运算符" class="headerlink" title="2.1 取余运算符 %"></a>2.1 取余运算符 %</h5><ul>
 <li>整数<br>  a%b=a-(a/b)*b<br>  因此，负数 ％ 正数，相当于是负数绝对值％正数加符号</li>
 <li>浮点数<br>  a%b=a-(b*q)， q=int(a/b)<br>  因此，相当于是证书的取余＋小数部分</li>
 </ul>
-<h4 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h4><ul>
-<li>Java 基本数据类型 <a href="">http://www.runoob.com/java/java-basic-datatypes.html</a></li>
-<li>Java 取余运算 <a href="">http://liujinpan75.iteye.com/blog/548625</a></li>
+<h5 id="2-2-bitwise-operator"><a href="#2-2-bitwise-operator" class="headerlink" title="2.2 bitwise operator"></a>2.2 bitwise operator</h5><pre><code>a = 0011 1100
+b = 0000 1101
+
+|符号|描述|例子|
+|:------:|:---------------------:|:--------------:|
+| &amp;|bit上的and运算,m每一位|a &amp; b = 0000 1100|
+</code></pre><h4 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h4><ul>
+<li>Java 基本数据类型 <a href="http://www.runoob.com/java/java-basic-datatypes.html" target="_blank" rel="external">http://www.runoob.com/java/java-basic-datatypes.html</a></li>
+<li>Java 取余运算 <a href="http://liujinpan75.iteye.com/blog/548625" target="_blank" rel="external">http://liujinpan75.iteye.com/blog/548625</a></li>
+<li>[英]Java - Basic Operators<a href="https://www.tutorialspoint.com/java/java_basic_operators.htm" target="_blank" rel="external">https://www.tutorialspoint.com/java/java_basic_operators.htm</a></li>
 </ul>
 
     
