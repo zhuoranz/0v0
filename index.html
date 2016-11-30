@@ -124,10 +124,12 @@
 最大值： 127（2^7-1）
 最小值：-128（-2^7）
 默认值：    0
+反码：   一个数如果是正，则它的反码与原码相同；
+        一个数如果是负，则符号位为1，其余各位是对原码取反；
 </code></pre><h5 id="1-2-int"><a href="#1-2-int" class="headerlink" title="1.2 int"></a>1.2 int</h5><pre><code>位数：32位、有符号的,以二进制补码表示的整数
 （2进制补码？）
-最大值： 127（2^7-1）
-最小值：-128（-2^7）
+最大值： 2,147,483,647（2^31 - 1） 
+最小值：-2,147,483,648（-2^31）
 默认值：    0
 </code></pre><h5 id="1-3-char"><a href="#1-3-char" class="headerlink" title="1.3 char"></a>1.3 char</h5><pre><code>位数：一个单一的16位Unicode字符；
 最小值： ’\u0000’（即为0）
@@ -141,6 +143,7 @@ char数据类型可以储存任何字符；
 <h5 id="2-2-bitwise-operator"><a href="#2-2-bitwise-operator" class="headerlink" title="2.2 bitwise operator"></a>2.2 bitwise operator</h5><pre><code>a = 0011 1100
 b = 0000 1101
 
+0xff 16进制15*16＋15 ＝ 255 ＝ 1111 1111
 |符号|描述|例子|
 |:------:|:---------------------:|:--------------:|
 | &amp;|bit上的and运算,m每一位|a &amp; b = 0000 1100|
@@ -190,7 +193,7 @@ b = 0000 1101
 		
   
     <h1 itemprop="name" class="entry-title">
-      <a class="article-title" href="/0v0/2016/11/27/mac问题合集/">mac问题合集</a>
+      <a class="article-title" href="/0v0/2016/11/27/mac问题合集/">mac备忘录</a>
     </h1>
   
 
@@ -200,7 +203,9 @@ b = 0000 1101
     	<p>都是遇到的议席的小问题的快速解决方法和小窍门。持续更新….不过也希望我不会遇到那么多</p>
 <h4 id="小窍门"><a href="#小窍门" class="headerlink" title="小窍门"></a>小窍门</h4><ol>
 <li><strong>快速截图</strong>，command ＋ control + shift + 4</li>
+<li><strong>二进制</strong> </li>
 </ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexdump -C filename | more</div></pre></td></tr></table></figure>
 <h4 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h4><ol>
 <li><strong>中文输入法无选字框</strong><br> activity monitor 里面强退 chinese 输入法，再从英文转换回去就好啦～</li>
 </ol>
