@@ -33,7 +33,7 @@
 1.2 int位数：32位、有符号的,以二进制补码表示的整数
 （2进制补码？）
 最大值： 2,147">
-<meta property="og:updated_time" content="2016-11-30T03:04:26.000Z">
+<meta property="og:updated_time" content="2016-11-30T03:06:05.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java备忘录 （持续更新）">
 <meta name="twitter:description" content="1.0 基础数据类型1.1 byte位数：8位、有符号的，以二进制补码表示的整数
@@ -123,57 +123,8 @@
 char数据类型可以储存任何字符；
 例子：char letter = ‘A’。
 </code></pre><h5 id="1-x-符号位二进制补码-Two’s-Complement-Notation"><a href="#1-x-符号位二进制补码-Two’s-Complement-Notation" class="headerlink" title="1.x 符号位二进制补码 Two’s Complement Notation"></a>1.x 符号位二进制补码 Two’s Complement Notation</h5><p>ex: 3 bit 二进制 </p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">二进制</th>
-<th style="text-align:center">无符号十进制</th>
-<th style="text-align:center">有符号十进制</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">000</td>
-<td style="text-align:center">0</td>
-<td style="text-align:center">0</td>
-</tr>
-<tr>
-<td style="text-align:center">001</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-</tr>
-<tr>
-<td style="text-align:center">010</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">2</td>
-</tr>
-<tr>
-<td style="text-align:center">011</td>
-<td style="text-align:center">3</td>
-<td style="text-align:center">3</td>
-</tr>
-<tr>
-<td style="text-align:center">100</td>
-<td style="text-align:center">4</td>
-<td style="text-align:center">-4</td>
-</tr>
-<tr>
-<td style="text-align:center">101</td>
-<td style="text-align:center">5</td>
-<td style="text-align:center">-3</td>
-</tr>
-<tr>
-<td style="text-align:center">110</td>
-<td style="text-align:center">6</td>
-<td style="text-align:center">-2</td>
-</tr>
-<tr>
-<td style="text-align:center">111</td>
-<td style="text-align:center">7</td>
-<td style="text-align:center">-1</td>
-</tr>
-</tbody>
-</table>
+<center><br><br>|二进制|无符号十进制|有符号十进制|<br>|:——:|:——:|:——:|<br>|000|0|0|<br>|001|1|1|<br>|010|2|2|<br>|011|3|3|<br>|100|4|-4|<br>|101|5|-3|<br>|110|6|-2|<br>|111|7|-1|<br><br></center>
+
 <h4 id="2-0-基础运算"><a href="#2-0-基础运算" class="headerlink" title="2.0 基础运算"></a>2.0 基础运算</h4><h5 id="2-1-取余运算符"><a href="#2-1-取余运算符" class="headerlink" title="2.1 取余运算符 %"></a>2.1 取余运算符 %</h5><ul>
 <li>整数<br>a%b=a-(a/b)*b<br>因此，负数 ％ 正数，相当于是负数绝对值％正数加符号</li>
 <li>浮点数<br>a%b=a-(b*q)， q=int(a/b)<br>因此，相当于是证书的取余＋小数部分</li>
